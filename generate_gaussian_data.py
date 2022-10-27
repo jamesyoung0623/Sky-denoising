@@ -5,8 +5,8 @@ from skimage import img_as_ubyte
 import cv2
 import random
 
-file_names = sorted(glob.glob('./datasets/asus_train/asus_train_rgb/clean/*'))
-result_dir = './datasets/asus_train/asus_train_rgb/noisy/'
+file_names = sorted(glob.glob('./datasets/asus_train/clean/*'))
+result_dir = './datasets/asus_train/noisy/'
 
 
 def generate_synthesized_training_data():

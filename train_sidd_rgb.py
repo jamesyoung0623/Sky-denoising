@@ -19,7 +19,7 @@ from dataloaders.data_rgb import get_training_data, get_validation_data
 import utils
 
 parser = argparse.ArgumentParser(description='RGB denoising evaluation on the validation set of SIDD')
-parser.add_argument('--input_dir', default='./datasets/asus_train/asus_train_rgb/', type=str)
+parser.add_argument('--input_dir', default='./datasets/asus_train/', type=str)
 parser.add_argument('--weights', default='./pretrained_models/denoising/sidd_rgb.pth', type=str)
 
 args = parser.parse_args()
